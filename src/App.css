@@ -1,0 +1,12 @@
+.body-on {
+  background-color: #f0e68c; /* Màu sáng cho trạng thái On */
+  color: #000; /* Màu chữ tối */
+  transition: background-color 0.5s, color 0.5s; /* Hiệu ứng chuyển đổi */
+}
+
+.body-off {
+  background-color: #333; /* Màu tối cho trạng thái Off */
+  color: #fff; /* Màu chữ sáng */
+  transition: background-color 0.5s, color 0.5s; /* Hiệu ứng chuyển đổi */
+}
+
