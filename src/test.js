@@ -5,6 +5,7 @@ import { Children, use, useEffect, useState, useContext, useReducer, useRef } fr
 export function Test() {
 
   console.log('Re-render');
+  console.log('React-demo');
   return (
     <div>
       <h3>Chào mừng bạn đến với trang web</h3>
