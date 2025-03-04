@@ -144,7 +144,7 @@ function HomeContainer() {
             <span className="sale-text">FLASH SALE</span>
             <span className="discount">-50%</span>
           </div>
-          <img src="/flashsale1.png" alt="Hero" />
+          <img src="https://media.vneconomy.vn/images/upload/2021/12/14/nike.jpg" alt="Hero" />
         </div>
       </section>
 
