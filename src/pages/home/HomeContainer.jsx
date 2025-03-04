@@ -144,7 +144,7 @@ function HomeContainer() {
             <span className="sale-text">FLASH SALE</span>
             <span className="discount">-50%</span>
           </div>
-          <img src="/image9_new.png" alt="Hero" />
+          <img src="/flashsale1.png" alt="Hero" />
         </div>
       </section>
 
