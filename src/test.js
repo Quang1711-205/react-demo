@@ -3,12 +3,16 @@ import React, { createContext, memo } from 'react';
 import { Children, use, useEffect, useState, useContext, useReducer, useRef } from 'react';
 
 export function Test() {
+  const [count, setCount] = useState();
 
-  console.log('Re-render');
-  console.log('React-demo');
+  const handleSubmit = () => {
+    setCount(prev => prev + 1);
+  }
+
   return (
     <div>
-      <h3>Chào mừng bạn đến với trang web</h3>
+      <h3>Count: {count}</h3>
+      <button onClick={handleSubmit}>Tăng</button>
     </div>
   );
 }

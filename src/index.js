@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './styles/globals.css';
 
 // entry point (điểm vào) của ứng dụng React.
 // Nơi kết nối React với DOM thực tế trên trình duyệt (thông qua lệnh ở dưới)

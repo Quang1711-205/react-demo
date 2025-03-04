@@ -4,13 +4,16 @@
   "private": true,
   "dependencies": {
     "cra-template": "1.2.0",
+    "framer-motion": "^12.4.7",
+    "lucide-react": "^0.476.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-router-dom": "^7.2.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^4.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "cross-env PORT=3001 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -32,5 +35,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.10",
+    "typescript": "^5.7.3"
   }
 }

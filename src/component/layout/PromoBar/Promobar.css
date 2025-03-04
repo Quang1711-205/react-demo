@@ -1,0 +1,12 @@
+.promo-bar {
+    background-color: var(--accent);
+    color: var(--dark);
+    text-align: center;
+    padding: 8px 0;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.promo-bar span {
+    color: var(--secondary);
+}
