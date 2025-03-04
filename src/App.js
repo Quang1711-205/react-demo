@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Router, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import PromoBar from './component/layout/PromoBar/Promobar';
 import Header from "./component/layout/Header/Header";
 import Footer from './component/layout/Footer/Footer';
@@ -15,7 +15,7 @@ function App() {
         <Route path="/" element={<HomeContainer />} /> 
       </Routes>
       <Footer />
-    </BrowserRouter>
+      </BrowserRouter>
   );
 }
 

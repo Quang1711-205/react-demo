@@ -4,17 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './styles/globals.css';
-import { BrowserRouter } from 'react-router-dom';
 
 // entry point (điểm vào) của ứng dụng React.
 // Nơi kết nối React với DOM thực tế trên trình duyệt (thông qua lệnh ở dưới)
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <BrowserRouter basename="/react-demo"> {/* Thêm basename */}
+    <React.StrictMode>
       <App />
-    </BrowserRouter>
-  </React.StrictMode>
+    </React.StrictMode>
 );
 
 // Nó chọn phần tử HTML có id = 'root' trong file public/index.html
