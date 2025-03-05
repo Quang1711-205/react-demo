@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
 import './HomeContainer.css';
 
 function HomeContainer() {
@@ -130,6 +131,19 @@ function HomeContainer() {
     }
   };
 
+    // Danh mục sản phẩm
+    const categories = [
+      { name: "Đồ chơi", image: "https://down-vn.img.susercontent.com/file/ce8f8abc726cafff671d0e5311caa684@resize_w640_nl.webp" },
+      { name: "Điện thoại", image: "https://down-vn.img.susercontent.com/file/31234a27876fb89cd522d7e3db1ba5ca@resize_w640_nl.webp" },
+      { name: "Laptop & Máy tính", image: "https://down-vn.img.susercontent.com/file/c3f3edfaa9f6dafc4825b77d8449999d@resize_w640_nl.webp" },
+      { name: "Thời trang nam", image: "https://down-vn.img.susercontent.com/file/687f3967b7c2fe6a134a2c11894eea4b@resize_w640_nl.webp" },
+      { name: "Thời trang nữ", image: "https://down-vn.img.susercontent.com/file/75ea42f9eca124e9cb3cde744c060e4d@resize_w640_nl.webp" },
+      { name: "Đồ gia dụng", image: "https://down-vn.img.susercontent.com/file/7abfbfee3c4844652b4a8245e473d857@resize_w640_nl.webp" },
+      { name: "Giày dép nam", image: "https://down-vn.img.susercontent.com/file/74ca517e1fa74dc4d974e5d03c3139de@resize_w640_nl.webp" },
+      { name: "Đồng hồ", image: "https://down-vn.img.susercontent.com/file/86c294aae72ca1db5f541790f7796260@resize_w640_nl.webp" }
+    ];
+  
+
   return (
     <main className="container">
       {/* Hero Section */}
@@ -152,38 +166,16 @@ function HomeContainer() {
       <section className="fade-in">
         <h2 className="section-title">Danh mục nổi bật</h2>
         <div className="categories">
-        <div className="category-card">
-            <img src="https://down-vn.img.susercontent.com/file/ce8f8abc726cafff671d0e5311caa684@resize_w640_nl.webp" alt="Điện thoại" className="category-img" />
-            <div className="category-name">Đồ chơi</div>
-          </div>
-          <div className="category-card">
-            <img src="https://down-vn.img.susercontent.com/file/31234a27876fb89cd522d7e3db1ba5ca@resize_w640_nl.webp" alt="Điện thoại" className="category-img" />
-            <div className="category-name">Điện thoại</div>
-          </div>
-          <div className="category-card">
-            <img src="https://down-vn.img.susercontent.com/file/c3f3edfaa9f6dafc4825b77d8449999d@resize_w640_nl.webp" alt="Laptop" className="category-img" />
-            <div className="category-name">Laptop & Máy tính</div>
-          </div>
-          <div className="category-card">
-            <img src="https://down-vn.img.susercontent.com/file/687f3967b7c2fe6a134a2c11894eea4b@resize_w640_nl.webp" alt="Thời trang nam" className="category-img" />
-            <div className="category-name">Thời trang nam</div>
-          </div>
-          <div className="category-card">
-            <img src="https://down-vn.img.susercontent.com/file/75ea42f9eca124e9cb3cde744c060e4d@resize_w640_nl.webp" alt="Thời trang nữ" className="category-img" />
-            <div className="category-name">Thời trang nữ</div>
-          </div>
-          <div className="category-card">
-            <img src="https://down-vn.img.susercontent.com/file/7abfbfee3c4844652b4a8245e473d857@resize_w640_nl.webp" alt="Đồ gia dụng" className="category-img" />
-            <div className="category-name">Đồ gia dụng</div>
-          </div>
-          <div className="category-card">
-            <img src="https://down-vn.img.susercontent.com/file/74ca517e1fa74dc4d974e5d03c3139de@resize_w640_nl.webp" alt="Đồ gia dụng" className="category-img" />
-            <div className="category-name">Giày dép nam</div>
-          </div>
-          <div className="category-card">
-            <img src="https://down-vn.img.susercontent.com/file/86c294aae72ca1db5f541790f7796260@resize_w640_nl.webp" alt="Đồ gia dụng" className="category-img" />
-            <div className="category-name">Đồng hồ</div>
-          </div>
+          {categories.map((category, index) => (
+            <Link
+              key={index}
+              to={`/danh-muc/${category.name.toLowerCase().replace(/\s+/g, "-")}`}
+              className="category-card"
+            >
+              <img src={category.image} alt={category.name} className="category-img" />
+              <div className="category-name">{category.name}</div>
+            </Link>
+          ))}
         </div>
       </section>
 
@@ -226,11 +218,11 @@ function HomeContainer() {
         </div>
       </div>
 
-      {/* Featured Products Section */}
+      {/* Sản phẩm nổi bật */}
       <h2 className="section-title">Sản phẩm nổi bật</h2>
       <section className="products">
-        {featuredProducts.map(product => (
-          <div key={product.id} className="product">
+        {featuredProducts.map((product) => (
+          <Link key={product.id} to={`/san-pham/${product.id}`} className="product">
             <div className="product-image">
               <img src={product.image} alt={product.name} />
               {product.discount && <span className="product-tag">{product.discount}</span>}
@@ -240,16 +232,15 @@ function HomeContainer() {
               <div className="product-price">
                 <div>
                   <span className="price">{product.price}</span>
-                  {product.originalPrice && <span className="original-price">{product.originalPrice}</span>}
                 </div>
                 <div className="rating">{product.rating}</div>
               </div>
               <div className="product-actions">
                 <button className="add-to-cart">Thêm vào giỏ</button>
                 <button className="wishlist">♡</button>
-              </div>
             </div>
-          </div>
+            </div>
+          </Link>
         ))}
       </section>
 
