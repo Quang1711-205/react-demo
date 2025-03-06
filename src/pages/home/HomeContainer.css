@@ -734,7 +734,6 @@
   aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: 8px;
-  margin-bottom: 8px;
 }
 
 .category-name {
@@ -992,3 +991,74 @@ a {
   color: inherit;
 }
   
+/* CSS mặc định cho categories */
+.categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+  margin-bottom: 40px; /* Thêm margin bottom để tạo khoảng cách với phần bên dưới */
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  padding: 8px; /* Thêm padding cho category card */
+}
+
+.category-img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.category-name {
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Media query cho thiết bị di động */
+@media screen and (max-width: 1115px) {
+  .categories {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    grid-template-columns: unset;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    padding: 10px 0 20px 0; /* Thêm padding top và bottom */
+    gap: 15px; /* Tăng gap để các mục không bị dính */
+    margin-bottom: 24px; /* Tăng margin bottom trên mobile */
+  }
+  
+  .category-card {
+    flex: 0 0 auto;
+    min-width: 100px;
+    margin: 0 5px; /* Thêm margin hai bên */
+  }
+  
+  .section-title {
+    margin-bottom: 15px; /* Thêm margin cho tiêu đề phần */
+    padding: 0 10px; /* Thêm padding cho tiêu đề */
+  }
+  
+  /* Ẩn thanh cuộn nhưng vẫn cho phép cuộn */
+  .categories::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .categories {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  /* Thêm style cho section để tạo khoảng cách giữa các section */
+  section.fade-in {
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+  }
+}
