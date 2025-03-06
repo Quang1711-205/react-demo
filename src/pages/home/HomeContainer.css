@@ -752,7 +752,7 @@
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
     padding-bottom: 16px;
-    gap: 12px;
+    gap: 20px;
   }
   
   .category-card {
@@ -911,7 +911,7 @@
     overflow-x: auto;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-    gap: 10px;
+    gap: 20px;
     padding-bottom: 15px; /* Thêm padding để tránh thanh cuộn che nội dung */
   }
 
