@@ -910,7 +910,7 @@
     overflow-x: auto;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-    gap: 20px;
+    gap: 10px;
     padding-bottom: 15px; /* Thêm padding để tránh thanh cuộn che nội dung */
   }
 
@@ -918,6 +918,7 @@
     min-width: 150px; /* Chiều rộng cố định cho mỗi sản phẩm */
     max-width: 150px;
     flex: 0 0 auto;
+    margin: 0 .25rem;
   }
 
   .product-image1 {
@@ -975,6 +976,7 @@
   .product-card {
     min-width: 140px;
     max-width: 140px;
+    margin: 0 .25rem;
   }
 
   .title-text {
