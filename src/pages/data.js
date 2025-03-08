@@ -1,23 +1,25 @@
 export const products = [
   {
     id: 1,
-    name: "Áo thun nam Classic Fit cao cấp",
-    price: "320.000đ",
+    name: "(Fom rộng)Áo nỉ cổ bẻ Sweater JULIDO nỉ 2 da nam nữ unisex - GVW",
+    price: "152.000đ",
     originalPrice: "400.000đ",
-    discount: "-20%",
+    discount: "-49%",
     rating: "4.5",
     reviewCount: 120,
     category: 'quần áo',
-    image: "https://picsum.photos/600/600",
+    image: "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m3b2m0ogl6f066.webp",
     thumbnails: [
-      "https://picsum.photos/600/600",
-      "https://picsum.photos/601/600",
-      "https://picsum.photos/600/601",
-      "https://picsum.photos/601/601"
+      "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m3b2m0ogl6f066.webp",
+      "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m1qi0k1qrr6b58.webp",
+      "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m1qhpcjx9xsj30.webp",
+      "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m1qhqf24vzjz3c.webp",
+      "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m1qhqiizt9rzed.webp",
+      "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m1qi14n4mtsj3f.webp",
     ],
     isFeatured: true,
     isFlashSale: true,
-    flashSalePrice: "299.000đ",
+    flashSalePrice: "119.000đ",
     hotSelling: true,
     soldCount: 89,
     // Tùy chọn
@@ -25,8 +27,8 @@ export const products = [
       colors: [
         { id: 1, name: "Đen", value: "black", available: true },
         { id: 2, name: "Xanh", value: "blue", available: true },
-        { id: 3, name: "Đỏ", value: "red", available: true },
-        { id: 4, name: "Xanh lá", value: "green", available: true }
+        { id: 3, name: "Xám", value: "grey", available: true },
+        { id: 4, name: "Nâu", value: "brown", available: true }
       ],
       sizes: [
         { id: 1, name: "S", available: true },
@@ -38,11 +40,17 @@ export const products = [
     },
     // Thông tin chi tiết
     details: {
-      description: "Áo thun nam Classic Fit được thiết kế với phong cách đơn giản nhưng tinh tế, phù hợp cho mọi dịp, từ đi làm, đi chơi đến các hoạt động thể thao nhẹ. Với chất liệu 100% cotton cao cấp, áo mang lại cảm giác mềm mại, thoáng khí và thấm hút mồ hôi tốt, giúp bạn luôn cảm thấy thoải mái khi mặc.",
+      description: `Áo nỉ form rộng cổ bẻ Sweater JULIDO nỉ 2 da lông cáo nam nữ unisex - GVW
+
+chất vải: vải nỉ ép
+
+Bảng Szie: M, L, XL, XXL ( 50-85KG)
+
+Màu: đen, tiêu, than`,
       specifications: [
         { label: "Chất liệu", value: "100% Cotton" },
         { label: "Form dáng", value: "Classic Fit" },
-        { label: "Màu sắc", value: "Đen, Xanh, Đỏ, Xanh lá" },
+        { label: "Màu sắc", value: "Đen, Xanh, Xám, Nâu" },
         { label: "Kích thước", value: "S, M, L, XL, XXL" },
         { label: "Xuất xứ", value: "Việt Nam" }
       ],
@@ -55,8 +63,8 @@ export const products = [
     },
     // Thông tin người bán
     seller: {
-      name: "SAHADOR - Tổng Kho Sỉ Giày Đẹp",
-      logo: "https://via.placeholder.com/50",
+      name: "@JULIDO",
+      logo: "https://down-vn.img.susercontent.com/file/vn-11134216-7r98o-lokxzqzlb94jcd@resize_w160_nl.webp",
       lastOnline: "38 Phút Trước",
       metrics: {
         reviews: "46,8k",
@@ -71,110 +79,133 @@ export const products = [
     breadcrumb: [
       { name: "Trang chủ", link: "/" },
       { name: "Sản phẩm", link: "/san-pham" },
-      { name: "Áo thun", link: "/san-pham/ao-thun" },
-      { name: "Áo thun nam Classic Fit cao cấp", link: null }
+      { name: "Áo nỉ sweater", link: "/san-pham/ao-ni-sweater" },
+      { name: "Áo nỉ cổ bẻ Sweater JULIDO nỉ 2 da nam nữ unisex - GVW", link: null }
     ]
   },
   {
     id: 2,
-    name: "Váy liền thân thời trang công sở",
-    price: "499.000đ",
+    name: "[Tặng vớ+Box] Dép Unisex nam nữ quai ngang SAHADOR cao cấp thời trang,trẻ trung hàng chính hãng SD04",
+    price: "129.000đ",
     originalPrice: "550.000đ",
-    discount: "-10%",
-    rating: "4.8",
-    reviewCount: 78,
-    category: 'quần áo',
-    image: "https://picsum.photos/600/601",
+    discount: "-60%",
+    rating: "4.9",
+    reviewCount: 278,
+    category: 'giày dép',
+    image: "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m1f07nmrxd20f7.webp",
     thumbnails: [
-      "https://picsum.photos/600/601",
-      "https://picsum.photos/602/601",
-      "https://picsum.photos/600/602",
-      "https://picsum.photos/602/602"
+      "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m1f07nmrxd20f7.webp",
+      "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m1f07nmrxcm48d.webp",
+      "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m1hv5vmo53df24.webp",
+      "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m1hv5vmo3p3382.webp",
     ],
     isFeatured: true,
     isFlashSale: true,
-    flashSalePrice: "379.000đ",
+    flashSalePrice: "99.000đ",
     hotSelling: true,
     soldCount: 45,
     // Tùy chọn
     options: {
       colors: [
         { id: 1, name: "Đen", value: "black", available: true },
-        { id: 2, name: "Xanh đậm", value: "darkblue", available: true },
-        { id: 3, name: "Đỏ", value: "red", available: true }
+        { id: 2, name: "Trắng", value: "white", available: true },
+        { id: 3, name: "Vàng", value: "gold", available: true }
       ],
       sizes: [
-        { id: 1, name: "S", available: true },
-        { id: 2, name: "M", available: true },
-        { id: 3, name: "L", available: true }
+        { id: 1, name: "36", available: true },
+        { id: 2, name: "37", available: true },
+        { id: 3, name: "38", available: true },
+        { id: 4, name: "39", available: true },
+        { id: 5, name: "40", available: true },
+        { id: 6, name: "41", available: true },
+        { id: 7, name: "42", available: true },
+        { id: 8, name: "43", available: true },
+        { id: 9, name: "44", available: true },
       ]
     },
     // Thông tin chi tiết
     details: {
-      description: "Váy liền thân công sở thiết kế thanh lịch, sang trọng với form dáng ôm nhẹ, tôn dáng người mặc. Chất liệu vải cao cấp giúp thoáng khí, không nhăn và dễ chăm sóc, phù hợp cho môi trường văn phòng và các cuộc gặp gỡ quan trọng.",
+      description: `THÔNG TIN SẢN PHẨM
+
+- Chất liệu đế API siêu nhẹ chống trơn trượt
+
+- Chất liệu quai được bọc 2 lớp ,không bị hôi chân
+
+- Đi cực mát và êm, các bạn rửa chân thoải mái không sợ hỏng nhé.
+
+- Dép nam quai ngang được thiết kế với đường nét tinh tế
+
+- Đế cực êm, đi đứng lâu vẫn thoải mái.
+
+- Màu sắc : Đen,Trắng,Kem
+
+- Size từ 36 đến 44`,
       specifications: [
-        { label: "Chất liệu", value: "65% Polyester, 35% Cotton" },
-        { label: "Form dáng", value: "A-line" },
-        { label: "Màu sắc", value: "Đen, Xanh đậm, Đỏ" },
-        { label: "Kích thước", value: "S, M, L" },
+        { label: "Thương hiệu", value: "SAHADOR" },
+        { label: "Chất liệu", value: "Cao su" },
+        { label: "Kiểu dép", value: "Dép quai ngang" },
+        { label: "Màu sắc", value: "Đen, Trắng, Vàng" },
+        { label: "Kích thước", value: "Từ 36 -> 44" },
         { label: "Xuất xứ", value: "Việt Nam" }
       ],
       usageGuide: [
-        "Giặt tay hoặc giặt máy ở chế độ nhẹ.",
+        "Giặt tay hoặc rửa nước nhẹ nhàng.",
         "Không sử dụng chất tẩy mạnh.",
         "Phơi trong bóng râm.",
-        "Ủi ở nhiệt độ thấp hoặc trung bình."
+        "Được hỗ trợ trả khi hàng lỗi hoặc không đúng size",
+        "Được hoàn tiền đến 300% nếu sản phẩm không giống mô tả",
+        "Cam kết hàng giống như hình 100%."
       ]
     },
     // Thông tin người bán
     seller: {
-      name: "MintStyle - Thời Trang Nữ",
-      logo: "https://via.placeholder.com/50",
-      lastOnline: "15 Phút Trước",
+      name: "SAHADOR - Tổng Kho Sỉ Giày Dép",
+      logo: "https://down-vn.img.susercontent.com/file/vn-11134233-7ras8-m0pxgr9v8iof5d@resize_w160_nl.webp",
+      lastOnline: "12 Phút Trước",
       metrics: {
-        reviews: "32,4k",
-        responseRate: "95%",
-        products: "245",
+        reviews: "46,9k",
+        responseRate: "93%",
+        products: "161",
         responseTime: "trong vòng giờ",
         joinTime: "4 năm trước",
-        followers: "76,5k"
+        followers: "91,3k"
       }
     },
     // Thông tin thêm
     breadcrumb: [
       { name: "Trang chủ", link: "/" },
       { name: "Sản phẩm", link: "/san-pham" },
-      { name: "Váy", link: "/san-pham/vay" },
-      { name: "Váy liền thân thời trang công sở", link: null }
+      { name: "Giày Dép", link: "/san-pham/Giày Dép Nam" },
+      { name: "Dép Unisex nam nữ quai ngang SAHADOR cao cấp thời trang,trẻ trung hàng chính hãng SD04", link: null }
     ]
   },
   {
     id: 3,
-    name: "Giày thể thao nam chạy bộ",
-    price: "649.000đ",
-    originalPrice: "800.000đ",
+    name: "Dép nữ cá mập đổi màu siêu dễ thương mới 2024, Thế hệ thứ ba dày hơn và được nâng cấp, siêu chống trượt và siêu mềm",
+    price: "41.580đ",
+    originalPrice: "70.000đ",
     discount: "-19%",
-    rating: "4.3",
-    reviewCount: 215,
+    rating: "4.5",
+    reviewCount: 253,
     category: 'giày dép',
-    image: "https://picsum.photos/602/600",
+    image: "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lumxlxhx49w258.webp",
     thumbnails: [
-      "https://picsum.photos/602/600",
-      "https://picsum.photos/603/600",
-      "https://picsum.photos/602/603",
-      "https://picsum.photos/603/603"
+      "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lumxlxhx49w258.webp",
+      "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lumxlxhxmj9u6a.webp",
+      "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lumxlxhxjq4y8d.webp",
+      "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lumxlxhxjqjp27.webp",
     ],
     isFeatured: true,
     isFlashSale: true,
-    flashSalePrice: "599.000đ",
+    flashSalePrice: "39.000đ",
     hotSelling: false,
-    soldCount: 113,
+    soldCount: 3,
     // Tùy chọn
     options: {
       colors: [
         { id: 1, name: "Đen", value: "black", available: true },
         { id: 2, name: "Trắng", value: "white", available: true },
-        { id: 3, name: "Xanh", value: "blue", available: true }
+        { id: 3, name: "Xám", value: "gray", available: true }
       ],
       sizes: [
         { id: 1, name: "39", available: true },
@@ -186,62 +217,65 @@ export const products = [
     },
     // Thông tin chi tiết
     details: {
-      description: "Giày thể thao nam chạy bộ được thiết kế với công nghệ đệm tiên tiến, giúp hấp thụ lực tác động và hỗ trợ chuyển động tự nhiên của bàn chân. Đế cao su bền bỉ, chống trơn trượt, phù hợp cho các hoạt động thể thao và đi lại hàng ngày.",
+      description: `Sản phẩm được làm từ chất liệu upper thoải mái và thiết kế xỏ ngón tiện lợi nên bạn sẽ không bị mỏi sau khi đi lâu. Lớp lót mềm mại và thoải mái, chất liệu lót được lựa chọn kỹ càng, tạo cảm giác rất thoải mái cho bàn chân, chăm sóc da, thoải mái và dễ mặc. Chất liệu gót ổn định, dáng gót chắc chắn, họa tiết statement, ôm sát cổ chân, bền và chắc chắn. Đế chống trượt và chống mài mòn, đế được làm từ chất liệu chống mài mòn và chống trượt, không dễ trơn trượt khi đi lại`,
       specifications: [
-        { label: "Chất liệu", value: "Vải lưới, đế cao su" },
+        { label: "Chất liệu", value: "EVA" },
         { label: "Công nghệ", value: "Đệm khí, chống sốc" },
         { label: "Màu sắc", value: "Đen, Trắng, Xanh" },
         { label: "Kích thước", value: "39, 40, 41, 42, 43" },
         { label: "Xuất xứ", value: "Việt Nam" }
       ],
       usageGuide: [
-        "Tránh ngâm nước quá lâu.",
-        "Làm sạch bằng vải ẩm.",
+        "Giặt tay hoặc rửa nước nhẹ nhàng.",
+        "Không sử dụng chất tẩy mạnh.",
         "Phơi trong bóng râm.",
-        "Không đặt gần các nguồn nhiệt cao."
+        "Được hỗ trợ trả khi hàng lỗi hoặc không đúng size",
+        "Được hoàn tiền đến 300% nếu sản phẩm không giống mô tả",
+        "Cam kết hàng giống như hình 100%."
       ]
     },
     // Thông tin người bán
     seller: {
-      name: "SportMax - Đồ Thể Thao Chính Hãng",
-      logo: "https://via.placeholder.com/50",
+      name: "KG-Cửa Hàng Quần áo",
+      logo: "https://down-vn.img.susercontent.com/file/4fb1d00651ce4992630f37362a54ca8e@resize_w160_nl.webp",
       lastOnline: "5 Phút Trước",
       metrics: {
-        reviews: "58,2k",
+        reviews: "44,7k",
         responseRate: "90%",
-        products: "327",
+        products: "94",
         responseTime: "trong vòng 2 giờ",
-        joinTime: "5 năm trước",
-        followers: "112,7k"
+        joinTime: "3 năm trước",
+        followers: "35,2k"
       }
     },
     // Thông tin thêm
     breadcrumb: [
       { name: "Trang chủ", link: "/" },
       { name: "Sản phẩm", link: "/san-pham" },
-      { name: "Giày", link: "/san-pham/giay" },
-      { name: "Giày thể thao nam chạy bộ", link: null }
+      { name: "Giày Dép", link: "/san-pham/Giày Dép Nam" },
+      { name: "Dép nữ cá mập đổi màu siêu dễ thương mới 2024, Thế hệ thứ ba dày hơn và được nâng cấp, siêu chống trượt và siêu mềm", link: null }
     ]
   },
   {
     id: 4,
-    name: "Túi xách nữ thời trang cao cấp",
-    price: "899.000đ",
-    originalPrice: "1.200.000đ",
-    discount: "-25%",
-    rating: "4.8",
-    reviewCount: 67,
-    category: 'túi ví',
-    image: "https://picsum.photos/603/601",
+    name: "Adidas_Adifom Superstar Mule, Sục_Adidas 3 sọc, Giày Sục đạp gót ADIFOM Đen Trắng cao 4cm (HỖ TRỢ ĐỔI SIZE)",
+    price: "85.000đ",
+    originalPrice: "173.000đ",
+    discount: "-45%",
+    rating: "4.6",
+    reviewCount: 671,
+    category: 'giày dép',
+    image: "https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lzfvh7pf18de91.webp",
     thumbnails: [
-      "https://picsum.photos/603/601",
-      "https://picsum.photos/604/601",
-      "https://picsum.photos/603/604",
+      "https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lzq4m6i4e643c6.webp",
+      "https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lzq4m6i4e643c6.webp",
+      "https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lzfvh7poy0dv5e.webp",
+      "https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lzfvh7pf184zb0.webp",
       "https://picsum.photos/604/604"
     ],
     isFeatured: true,
     isFlashSale: true,
-    flashSalePrice: "884.700đ",
+    flashSalePrice: "79.700đ",
     hotSelling: false,
     limitedQuantity: true,
     remainingQuantity: 4,
@@ -249,111 +283,133 @@ export const products = [
     options: {
       colors: [
         { id: 1, name: "Đen", value: "black", available: true },
-        { id: 2, name: "Nâu", value: "brown", available: true },
-        { id: 3, name: "Đỏ đô", value: "darkred", available: true }
+        { id: 2, name: "Trắng", value: "white", available: true },
       ],
       sizes: [
-        { id: 1, name: "Nhỏ", available: false },
-        { id: 2, name: "Vừa", available: true },
-        { id: 3, name: "Lớn", available: true }
+        { id: 1, name: "36", available: true },
+        { id: 2, name: "37", available: true },
+        { id: 3, name: "38", available: true },
+        { id: 4, name: "39", available: true },
+        { id: 5, name: "40", available: true },
+        { id: 6, name: "41", available: true },
+        { id: 7, name: "42", available: true },
+        { id: 8, name: "43", available: true },
+        { id: 9, name: "44", available: true },
       ]
     },
     // Thông tin chi tiết
     details: {
-      description: "Túi xách nữ thời trang cao cấp được chế tác từ da thật 100%, với thiết kế thanh lịch và tinh tế. Phù hợp cho cả trang phục công sở và dạo phố, túi có nhiều ngăn tiện lợi và đường may tỉ mỉ, thể hiện sự sang trọng và đẳng cấp.",
+      description: `🔥 Thông tin sản phẩm: Dép Sục Adidas_Adifom Superstar Mule, Sục_Adidas Nữ, Giày Sục_Adidas đạp gót ADIFOM Đen Trắng cao 4cm (HỖ TRỢ ĐỔI SIZE)
+Chất liệu: 
+
++ Da Microfiber, chống nhăn, không lo bong tróc
+
++ Đế giầy: TPR siêu nhẹ, ma sát chống trơn trượt
+
+- Size giày 36 - 43`,
       specifications: [
-        { label: "Chất liệu", value: "Da bò thật 100%" },
-        { label: "Kích thước", value: "Nhỏ: 25x18x10cm, Vừa: 30x22x12cm, Lớn: 35x25x15cm" },
-        { label: "Màu sắc", value: "Đen, Nâu, Đỏ đô" },
-        { label: "Ngăn", value: "3 ngăn chính, 2 ngăn phụ" },
-        { label: "Xuất xứ", value: "Ý" }
+        { label: "Chất liệu", value: "Da" },
+        { label: "Kích thước", value: "Từ size 36 -> size 39" },
+        { label: "Màu sắc", value: "Đen, Trắng" },
+        { label: "Xuất xứ", value: "Việt Nam" }
       ],
       usageGuide: [
-        "Tránh tiếp xúc với nước và hóa chất mạnh.",
-        "Lau chùi bằng vải mềm khô hoặc ẩm nhẹ.",
-        "Bảo quản trong túi vải khi không sử dụng.",
-        "Tránh ánh nắng trực tiếp và nơi ẩm ướt."
+        "Lau chùi sạch sẽ và cất gọn sau khi sử dụng",
+        "Hạn chế tiếp xúc với nước",
+        " Để nơi khô ráo, thoáng mát, tránh ánh nắng mặt trời",
       ]
     },
     // Thông tin người bán
     seller: {
-      name: "LuxuryBags - Túi Xách Cao Cấp",
-      logo: "https://via.placeholder.com/50",
+      name: "dasfash.vn",
+      logo: "https://down-vn.img.susercontent.com/file/cn-11134216-7r98o-lzu6u6oryt9ee2@resize_w160_nl.webp",
       lastOnline: "25 Phút Trước",
       metrics: {
-        reviews: "28,5k",
+        reviews: "2,5k",
         responseRate: "97%",
-        products: "156",
+        products: "15",
         responseTime: "trong vòng giờ",
-        joinTime: "7 năm trước",
-        followers: "85,2k"
+        joinTime: "6 tháng trước",
+        followers: "2k"
       }
     },
     // Thông tin thêm
     breadcrumb: [
       { name: "Trang chủ", link: "/" },
       { name: "Sản phẩm", link: "/san-pham" },
-      { name: "Túi xách", link: "/san-pham/tui-xach" },
-      { name: "Túi xách nữ thời trang cao cấp", link: null }
+      { name: "Giày Dép", link: "/san-pham/Giày Dép Nam" },
+      { name: "Adidas_Adifom Superstar Mule, Sục_Adidas 3 sọc, Giày Sục đạp gót ADIFOM Đen Trắng cao 4cm (HỖ TRỢ ĐỔI SIZE)", link: null }
     ]
   },
   {
     id: 5,
-    name: "Đồng hồ nam thời trang chống nước",
-    price: "1.250.000đ",
-    originalPrice: "1.630.000đ",
-    discount: "-23%",
-    rating: "5",
-    reviewCount: 93,
-    category: 'đồng hồ',
-    image: "https://picsum.photos/605/600",
+    name: "Áo len nam ROWAY Premium | Len dài khóa cao cấp, thời trang, sang trọng",
+    price: "299.000đ",
+    originalPrice: "450.000đ",
+    discount: "-34%",
+    rating: "4.9",
+    reviewCount: 3300,
+    category: 'quần áo',
+    image: "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m3epmy4b1bjc6e.webp",
     thumbnails: [
-      "https://picsum.photos/605/600",
-      "https://picsum.photos/606/600",
-      "https://picsum.photos/605/606",
-      "https://picsum.photos/606/606"
+      "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m3epmy4b1bjc6e.webp",
+      "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m1tew5g69dbzf1.webp",
+      "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m3epmy4b1ayd92.webp",
+      "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m1tew5g69d1v0d.webp",
+      "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m1tew5g6arwf9e.webp"
     ],
     isFeatured: false,
     isFlashSale: true,
-    flashSalePrice: "1.215.830đ",
+    flashSalePrice: "279.830đ",
     hotSelling: true,
     soldCount: 56,
     // Tùy chọn
     options: {
       colors: [
         { id: 1, name: "Đen", value: "black", available: true },
-        { id: 2, name: "Bạc", value: "silver", available: true },
-        { id: 3, name: "Vàng", value: "gold", available: true }
+        { id: 2, name: "Trắng", value: "white", available: true },
+        { id: 3, name: "Xanh navy", value: "darkblue", available: true },
+        { id: 3, name: "Xám", value: "gray", available: true }
       ],
-      sizes: []
+      sizes: [
+        { id: 1, name: "S", available: true },
+        { id: 2, name: "M", available: true },
+        { id: 3, name: "L", available: true },
+        { id: 4, name: "XL", available: true },
+        { id: 5, name: "XXL", available: false }
+      ]
     },
     // Thông tin chi tiết
     details: {
-      description: "Đồng hồ nam thời trang chống nước có thiết kế sang trọng và hiện đại, kết hợp giữa phong cách thể thao và lịch lãm. Máy Quartz Nhật Bản chính xác cao, kính sapphire chống xước, khả năng chống nước 50m, phù hợp cho cả hoạt động thường ngày và những dịp đặc biệt.",
+      description: `Chi tiết sản phẩm:
+
+- Chất vải: dệt len
+
+- Phom áo: Suông che khuyết điểm tốt và dễ dàng hoạt động
+
+- Hoàn thiện: tỉ mỉ cao`,
       specifications: [
-        { label: "Loại máy", value: "Quartz Nhật Bản" },
-        { label: "Đường kính mặt", value: "42mm" },
-        { label: "Độ dày", value: "11mm" },
-        { label: "Chất liệu vỏ", value: "Thép không gỉ 316L" },
-        { label: "Chất liệu dây", value: "Thép không gỉ/Da thật" },
-        { label: "Chống nước", value: "50m" },
-        { label: "Xuất xứ", value: "Thụy Sĩ" }
+        { label: "Thương hiệu", value: "ROWAY" },
+        { label: "Phong cách", value: "Cơ bản" },
+        { label: "Chất liệu", value: "Len" },
+        { label: "Mẫu", value: "Trơn" },
+        { label: "Xuất xứ", value: "Việt Nam" }
       ],
       usageGuide: [
-        "Tránh va đập mạnh.",
-        "Không điều chỉnh nút chỉnh giờ khi đang ở dưới nước.",
-        "Vệ sinh thường xuyên bằng vải mềm.",
-        "Tránh từ trường mạnh."
+        "Giặt ở nhiệt độ bình thường, với đồ có màu tương tự",
+        "Không được dùng hóa chất tẩy.",
+        "Hạn chế sử dụng máy sấy và ủi ở nhiệt độ thích hợp.",
+        "Lộn mặt trái khi phơi tránh bị nhanh phai màu"
       ]
     },
     // Thông tin người bán
     seller: {
-      name: "WatchElite - Đồng Hồ Chính Hãng",
-      logo: "https://via.placeholder.com/50",
+      name: "ROWAY official",
+      logo: "https://down-vn.img.susercontent.com/file/vn-11134216-7ras8-m1tcvua9obbn17@resize_w160_nl.webp",
       lastOnline: "10 Phút Trước",
       metrics: {
-        reviews: "42,3k",
-        responseRate: "96%",
+        reviews: "181,2k",
+        responseRate: "100%",
         products: "198",
         responseTime: "trong vòng giờ",
         joinTime: "8 năm trước",
@@ -364,8 +420,8 @@ export const products = [
     breadcrumb: [
       { name: "Trang chủ", link: "/" },
       { name: "Sản phẩm", link: "/san-pham" },
-      { name: "Đồng hồ", link: "/san-pham/dong-ho" },
-      { name: "Đồng hồ nam thời trang chống nước", link: null }
+      { name: "Áo len", link: "/san-pham/Áo len" },
+      { name: "Áo len nam ROWAY Premium | Len dài khóa", link: null }
     ]
   },
   {
@@ -395,7 +451,7 @@ export const products = [
       colors: [
         { id: 1, name: "Đen", value: "black", available: true },
         { id: 2, name: "Xanh", value: "blue", available: true },
-        { id: 3, name: "Vàng", value: "gold", available: true }
+        { id: 3, name: "Xám", value: "gray", available: true }
       ],
       sizes: [
         { id: 1, name: "M", available: true },
@@ -418,7 +474,7 @@ export const products = [
       specifications: [
         { label: "Chất liệu", value: "65% Polyester, 35% Cotton" },
         { label: "Form dáng", value: "A-line" },
-        { label: "Màu sắc", value: "Đen, Xanh, Vàng" },
+        { label: "Màu sắc", value: "Đen, Xanh, Xám" },
         { label: "Kích thước", value: "S, M, L" },
         { label: "Xuất xứ", value: "Việt Nam" }
       ],

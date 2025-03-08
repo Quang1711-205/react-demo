@@ -451,6 +451,10 @@
             background-color: darkblue;
         }
 
+        .color-gray {
+            background-color: grey;
+        }
+
         .size-options {
             margin-bottom: 25px;
         }
@@ -626,6 +630,7 @@
             height: 50px;
             object-fit: cover;
             border: 1px solid #ddd;
+            border-radius: 50%;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 

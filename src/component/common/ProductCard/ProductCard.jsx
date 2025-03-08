@@ -6,6 +6,7 @@ import { products } from "../../../pages/data";
 const ProductList = ({ products, title }) => {
   console.log('products nhận được category:', products);
     const featuredProducts = products
+      // .filter(product => product.isFeatured) -> Chỉ in sản phẩm nổi bật
       .map(product => ({
         id: product.id,
         image: product.image,
