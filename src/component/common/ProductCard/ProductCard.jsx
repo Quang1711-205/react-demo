@@ -4,8 +4,8 @@ import "./ProductCard.css"; // Nhớ tạo file App.css và copy phần CSS vào
 import { products } from "../../../pages/data";
 
 const ProductList = ({ products, title }) => {
+  console.log('products nhận được category:', products);
     const featuredProducts = products
-      .filter(product => product.isFeatured)
       .map(product => ({
         id: product.id,
         image: product.image,

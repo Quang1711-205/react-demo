@@ -65,7 +65,7 @@ const ProductDetail = () => {
       
       const similar = products.filter(
         (p) => p.id !== foundProduct.id && p.category === foundProduct.category
-      ).slice(0, 4); // Giới hạn chỉ lấy 4 sản phẩm đầu tiên;
+      ).slice(0, 4); 
       setSimilarProducts(similar);
       
       
