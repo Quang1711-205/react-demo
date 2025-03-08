@@ -67,6 +67,30 @@
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   }
+
+  .btn-primarys {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #293b8e;
+    font-weight: 600;
+    padding: 0.75rem 1.75rem;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.95rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  a.btn-primarys:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  }
   
   .hero-image {
     flex: 1;
@@ -446,13 +470,13 @@
         font-weight: 600;
       }
   
-      .product-info {
+      .product-info1 {
         padding: 20px;
         padding-top: 15px;
       }
   
-      .product-info h3 {
-        font-size: 18px;
+      .product-info1 h3 {
+        font-size: 17px;
         margin-bottom: 10px;
         display: -webkit-box;
         -webkit-line-clamp: 2; /* Giới hạn 2 dòng */
@@ -465,7 +489,7 @@
         line-height: 1.5; /* Điều chỉnh khoảng cách dòng phù hợp */
       }
   
-      .product-price {
+      .product-prices {
         display: flex;
         justify-content: space-between;
         align-items: center;

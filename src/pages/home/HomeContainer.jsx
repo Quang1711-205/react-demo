@@ -1,47 +1,49 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
+import products from '../data';
 import './HomeContainer.css';
 
 function HomeContainer() {
-  // Danh sách sản phẩm nổi bật (sau này sẽ thay thế bằng API)
-  const [featuredProducts, setFeaturedProducts] = useState([
-    {
-      id: 1,
-      image: "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m1fk9mibfck359.webp",
-      name: "Áo thun nam phong cách Hàn Quốc Giày thể thao nam chạy bộ Giày thể thao nam chạy bộ",
-      price: "299.000đ",
-      originalPrice: null,
-      discount: "-20%",
-      rating: "★★★★☆"
-    },
-    {
-      id: 2,
-      image: "https://down-vn.img.susercontent.com/file/sg-11134301-7rd59-lvisasqiul9wcc.webp",
-      name: "Váy liền thân thời trang công sở Túi xách nữ thời trang cao cấp",
-      price: "499.000đ",
-      originalPrice: null,
-      discount: "Mới",
-      rating: "★★★★★"
-    },
-    {
-      id: 3,
-      image: "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m3iqepkwtjn960.webp",
-      name: "Giày thể thao nam chạy bộ",
-      price: "649.000đ",
-      originalPrice: null,
-      discount: "-19%",
-      rating: "★★★★☆"
-    },
-    {
-      id: 4,
-      image: "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m1l2mbiry4wj9c.webp",
-      name: "Túi xách nữ thời trang cao cấp",
-      price: "899.000đ",
-      originalPrice: null,
-      discount: null,
-      rating: "★★★★★"
-    }
-  ]);
+  // Lấy dữ liệu sản phẩm nổi bật từ dữ liệu chung
+  const featuredProducts = products
+    .map(product => ({
+      id: product.id,
+      image: product.image,
+      name: product.name,
+      price: product.price,
+      originalPrice: product.originalPrice,
+      discount: product.discount,
+      rating: Array(5).fill('★').fill('☆', Math.round(parseFloat(product.rating))).join('')
+    }));
+
+  // Lấy dữ liệu sản phẩm flash sale từ dữ liệu chung
+  const flashSaleProducts = products
+    .filter(product => product.isFlashSale)
+    .map(product => {
+      let status = "";
+      let statusType = "";
+
+      if (product.hotSelling) {
+        status = "ĐANG BÁN CHẠY";
+        statusType = "hot-selling";
+      } else if (product.limitedQuantity) {
+        status = `CHỈ CÒN ${product.remainingQuantity}`;
+        statusType = "limited";
+      } else {
+        status = `ĐÃ BÁN ${product.soldCount}`;
+        statusType = "sold";
+      }
+
+      return {
+        id: product.id,
+        image: product.image,
+        discount: product.discount,
+        price: product.flashSalePrice,
+        status,
+        statusType
+      };
+    });
+
   // State cho countdown
   const [countdown, setCountdown] = useState({
     hours: 1,
@@ -49,60 +51,21 @@ function HomeContainer() {
     seconds: 59
   });
 
-  // Dữ liệu sản phẩm flash sale
-  const flashSaleProducts = [
-    {
-      id: 1,
-      image: "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m1l2mbiry4wj9c.webp",
-      discount: "-10%",
-      price: "379.000",
-      status: "ĐANG BÁN CHẠY",
-      statusType: "hot-selling"
-    },
-    {
-      id: 2,
-      image: "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-liy168tjbx765a.webp",
-      discount: "-10%",
-      price: "884.700",
-      status: "ĐÃ BÁN 13",
-      statusType: "sold"
-    },
-    {
-      id: 3,
-      image: "https://down-vn.img.susercontent.com/file/sg-11134201-7rffg-m4aange9dimb18.webp",
-      discount: "-26%",
-      price: "201.000",
-      status: "ĐANG BÁN CHẠY",
-      statusType: "hot-selling"
-    },
-    {
-      id: 4,
-      image: "https://down-vn.img.susercontent.com/file/vn-11134201-7ra0g-m6qqffyl4prba1.webp",
-      discount: "-5%",
-      price: "722.000",
-      status: "ĐANG BÁN CHẠY",
-      statusType: "hot-selling"
-    },
-    {
-      id: 5,
-      image: "https://down-vn.img.susercontent.com/file/cn-11134207-7ras8-m64rgn6a91qpe6.webp",
-      discount: "-23%",
-      price: "1.215.830",
-      status: "ĐANG BÁN CHẠY",
-      statusType: "hot-selling"
-    },
-    {
-      id: 6,
-      image: "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m129lj9085gfdf.webp",
-      discount: "-54%",
-      price: "113.900",
-      status: "CHỈ CÒN 4",
-      statusType: "limited"
-    }
+  // Danh mục sản phẩm
+  const categories = [
+    { name: "Đồ chơi", image: "https://down-vn.img.susercontent.com/file/ce8f8abc726cafff671d0e5311caa684@resize_w640_nl.webp" },
+    { name: "Điện thoại", image: "https://down-vn.img.susercontent.com/file/31234a27876fb89cd522d7e3db1ba5ca@resize_w640_nl.webp" },
+    { name: "Laptop & Máy tính", image: "https://down-vn.img.susercontent.com/file/c3f3edfaa9f6dafc4825b77d8449999d@resize_w640_nl.webp" },
+    { name: "Thời trang nam", image: "https://down-vn.img.susercontent.com/file/687f3967b7c2fe6a134a2c11894eea4b@resize_w640_nl.webp" },
+    { name: "Thời trang nữ", image: "https://down-vn.img.susercontent.com/file/75ea42f9eca124e9cb3cde744c060e4d@resize_w640_nl.webp" },
+    { name: "Đồ gia dụng", image: "https://down-vn.img.susercontent.com/file/7abfbfee3c4844652b4a8245e473d857@resize_w640_nl.webp" },
+    { name: "Giày dép nam", image: "https://down-vn.img.susercontent.com/file/74ca517e1fa74dc4d974e5d03c3139de@resize_w640_nl.webp" },
+    { name: "Đồng hồ", image: "https://down-vn.img.susercontent.com/file/86c294aae72ca1db5f541790f7796260@resize_w640_nl.webp" }
   ];
 
   // Logic countdown
   useEffect(() => {
+    document.body.style.paddingBottom = '0';
     const timer = setInterval(() => {
       setCountdown(prevState => {
         const { hours, minutes, seconds } = prevState;
@@ -120,7 +83,10 @@ function HomeContainer() {
       });
     }, 1000);
 
-    return () => clearInterval(timer);
+    return () => {
+      clearInterval(timer);
+      document.body.style.paddingBottom = "";
+    } 
   }, []);
 
   // Xử lý scroll cho products container
@@ -130,19 +96,6 @@ function HomeContainer() {
       container.scrollBy({ left: 200, behavior: 'smooth' });
     }
   };
-
-    // Danh mục sản phẩm
-    const categories = [
-      { name: "Đồ chơi", image: "https://down-vn.img.susercontent.com/file/ce8f8abc726cafff671d0e5311caa684@resize_w640_nl.webp" },
-      { name: "Điện thoại", image: "https://down-vn.img.susercontent.com/file/31234a27876fb89cd522d7e3db1ba5ca@resize_w640_nl.webp" },
-      { name: "Laptop & Máy tính", image: "https://down-vn.img.susercontent.com/file/c3f3edfaa9f6dafc4825b77d8449999d@resize_w640_nl.webp" },
-      { name: "Thời trang nam", image: "https://down-vn.img.susercontent.com/file/687f3967b7c2fe6a134a2c11894eea4b@resize_w640_nl.webp" },
-      { name: "Thời trang nữ", image: "https://down-vn.img.susercontent.com/file/75ea42f9eca124e9cb3cde744c060e4d@resize_w640_nl.webp" },
-      { name: "Đồ gia dụng", image: "https://down-vn.img.susercontent.com/file/7abfbfee3c4844652b4a8245e473d857@resize_w640_nl.webp" },
-      { name: "Giày dép nam", image: "https://down-vn.img.susercontent.com/file/74ca517e1fa74dc4d974e5d03c3139de@resize_w640_nl.webp" },
-      { name: "Đồng hồ", image: "https://down-vn.img.susercontent.com/file/86c294aae72ca1db5f541790f7796260@resize_w640_nl.webp" }
-    ];
-  
 
   return (
     <main className="container">
@@ -164,7 +117,7 @@ function HomeContainer() {
 
       {/* Categories Section */}
       <section className="fade-in">
-        <h2 className="section-title">Danh mục nổi bật</h2>
+        <h2 className="section-title" style={{marginBottom: '30px'}}>Danh mục nổi bật</h2>
         <div className="categories">
           {categories.map((category, index) => (
             <Link
@@ -184,7 +137,7 @@ function HomeContainer() {
         <div className="flash-sale-header">
           <div className="flash-sale-title">
             <span className="lightning">⚡</span>
-            <span className="title-text">FASH SALE</span>
+            <span className="title-text">FLASH SALE</span>
             <div className="countdown">
               <div className="time-box">{countdown.hours.toString().padStart(2, '0')}</div>
               <span className="time-separator">:</span>
@@ -219,7 +172,7 @@ function HomeContainer() {
       </div>
 
       {/* Sản phẩm nổi bật */}
-      <h2 className="section-title">Sản phẩm nổi bật</h2>
+      <h2 className="section-title" style={{marginBottom: '30px'}}>Sản phẩm nổi bật</h2>
       <section className="products">
         {featuredProducts.map((product) => (
           <Link key={product.id} to={`/san-pham/${product.id}`} className="product">
@@ -227,9 +180,9 @@ function HomeContainer() {
               <img src={product.image} alt={product.name} />
               {product.discount && <span className="product-tag">{product.discount}</span>}
             </div>
-            <div className="product-info">
+            <div className="product-info1">
               <h3>{product.name}</h3>
-              <div className="product-price">
+              <div className="product-prices">
                 <div>
                   <span className="price">{product.price}</span>
                 </div>
@@ -238,7 +191,7 @@ function HomeContainer() {
               <div className="product-actions">
                 <button className="add-to-cart">Thêm vào giỏ</button>
                 <button className="wishlist">♡</button>
-            </div>
+              </div>
             </div>
           </Link>
         ))}
@@ -251,7 +204,7 @@ function HomeContainer() {
           <div className="promo-content">
             <h3 className="promo-title">Công Nghệ Giảm Sốc</h3>
             <p className="promo-subtitle">Ưu đãi lớn cho điện thoại và laptop mới nhất</p>
-            <a href="#" className="btn btn-primary" style={{ backgroundColor: 'var(--primary)', color: 'white' }}>Mua ngay</a>
+            <a href="#" className="btn-primarys" style={{ backgroundColor: 'var(--primary)', color: 'white' }}>Mua ngay</a>
           </div>
         </div>
         <div className="promo-banner">
@@ -259,7 +212,7 @@ function HomeContainer() {
           <div className="promo-content">
             <h3 className="promo-title">Ưu đãi thanh toán</h3>
             <p className="promo-subtitle">Ưu đãi lớn khi mua mọi mặt hàng</p>
-            <a href="#" className="btn btn-primary" style={{ backgroundColor: 'var(--primary)', color: 'white' }}>Khám phá</a>
+            <a href="#" className="btn-primarys" style={{ backgroundColor: 'var(--primary)', color: 'white' }}>Khám phá</a>
           </div>
         </div>
       </section>
