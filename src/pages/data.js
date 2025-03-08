@@ -267,7 +267,7 @@ Màu: đen, tiêu, than`,
     category: 'giày dép',
     image: "https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lzfvh7pf18de91.webp",
     thumbnails: [
-      "https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lzq4m6i4e643c6.webp",
+      "https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lzfvh7pf18de91.webp",
       "https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lzq4m6i4e643c6.webp",
       "https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lzfvh7poy0dv5e.webp",
       "https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lzfvh7pf184zb0.webp",
