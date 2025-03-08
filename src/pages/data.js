@@ -271,7 +271,6 @@ Màu: đen, tiêu, than`,
       "https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lzq4m6i4e643c6.webp",
       "https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lzfvh7poy0dv5e.webp",
       "https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lzfvh7pf184zb0.webp",
-      "https://picsum.photos/604/604"
     ],
     isFeatured: true,
     isFlashSale: true,
