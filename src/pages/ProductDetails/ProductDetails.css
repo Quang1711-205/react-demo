@@ -851,9 +851,29 @@
             }
 
             .product-title {
-                font-size: 20px;
+                font-size: 14px;
+                font-weight: 400;
                 line-height: 1.3;
                 padding: 0 .5rem;
+            }
+
+            .rating-score {
+                font-size: 14px;
+            }
+
+            .rating-stars i {
+                font-size: 9px;
+                position: relative;
+                top: 1px;
+            }
+
+            .rating-number {
+                font-size: 14px;
+                top: 0;
+            }
+
+            .rating-evalue {
+                font-size: 13px;
             }
 
             .product-tag {
@@ -862,7 +882,7 @@
 
             .wishlist-button{
                 position: absolute;
-                top: 16.5rem;
+                top: 15.1233rem;
                 right: 5px;
                 width: 30px;
                 height: 30px;
@@ -872,25 +892,37 @@
                 flex-wrap: wrap;
                 gap: 5px;
                 padding: 0 .5rem;
+                /*Test*/
+                margin: 5px 0;
             }
 
             .product-price-container {
                 flex-wrap: wrap;
                 gap: 5px;
-                margin-bottom: 15px;
+                margin-bottom: 8px;
                 padding: 0 .5rem;
             }
 
             .product-price2 {
-                font-size: 24px;
+                font-size: 20px;
+                font-weight: 500;
             }
 
             .product-original-price {
-                font-size: 16px;
+                font-size: 13px;
+            }
+
+            .product-discount {
+                font-size: 11px;
+            }
+
+            .status-item {
+                font-size: 11px;
             }
 
             .product-status {
                 padding: 0 .5rem;
+                margin-bottom: 0px;
             }
 
             .color-options, .size-options {
@@ -1201,3 +1233,26 @@
     padding-bottom: 70px;
   }
 }
+
+
+/*Test*/
+@media screen and (max-width: 768px) {
+    .main-image {
+      height: auto;
+      max-height: 350px;
+      width: 100%;
+      transform: none;
+      margin: 0 auto 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    
+    .main-image img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      max-height: 350px;
+    }
+  }
