@@ -368,7 +368,7 @@ Chất liệu:
         { id: 1, name: "Đen", value: "black", available: true },
         { id: 2, name: "Trắng", value: "white", available: true },
         { id: 3, name: "Xanh navy", value: "darkblue", available: true },
-        { id: 3, name: "Xám", value: "gray", available: true }
+        { id: 4, name: "Xám", value: "gray", available: true }
       ],
       sizes: [
         { id: 1, name: "S", available: true },
