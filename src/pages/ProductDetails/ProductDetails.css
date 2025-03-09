@@ -882,8 +882,8 @@
 
             .wishlist-button{
                 position: absolute;
-                top: 15.1233rem;
-                right: 5px;
+                top: 0;
+                left: 0;
                 width: 30px;
                 height: 30px;
             }
