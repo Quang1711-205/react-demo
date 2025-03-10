@@ -8,7 +8,8 @@
     font-size: 24px;
     margin-bottom: 30px;
     margin-top: 30px;
-    font-weight: bold;
+    font-weight: 500;
+    font-family: -apple-system,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Roboto,Droid Sans,Arial,sans-serif;
   }
 
   .section-titles {
@@ -115,7 +116,8 @@
   
   .price {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 500;
+    font-family: -apple-system,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Roboto,Droid Sans,Arial,sans-serif;
     color: var(--primary);
   }
   
@@ -256,7 +258,8 @@
   .section-title {
     margin: 0;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
+    font-family: -apple-system,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Roboto,Droid Sans,Arial,sans-serif;
   }
 
   .categories {

@@ -291,7 +291,7 @@ const ProductDetail = () => {
       <div className="product-detail">
         <div className="product-gallery">
           <div className="main-image">
-            <span className="product-tag">{product.discount}</span>
+            <span className="product-tag" style={{position: 'absolute', left: '45px', top: '20px', fontSize: '14px'}}>{product.discount}</span>
             <button className="wishlist-button">
               <i className="far fa-heart"></i>
             </button>

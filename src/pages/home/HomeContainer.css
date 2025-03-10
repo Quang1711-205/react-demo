@@ -478,7 +478,8 @@
   
       .product-info1 h3 {
         font-size: 15px;
-        font-weight: 600;
+        font-family: -apple-system,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Roboto,Droid Sans,Arial,sans-serif;
+        font-weight: 400;
         margin-bottom: 10px;
         display: -webkit-box;
         -webkit-line-clamp: 2; /* Giới hạn 2 dòng */
@@ -487,8 +488,8 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: normal;
-        height: 48px; /* Chiều cao tương đương với 2 dòng */
-        line-height: 1.6; /* Điều chỉnh khoảng cách dòng phù hợp */
+        height: 42px; /* Chiều cao tương đương với 2 dòng */
+        line-height: 1.35; /* Điều chỉnh khoảng cách dòng phù hợp */
       }
   
       .product-prices {

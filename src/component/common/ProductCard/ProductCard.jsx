@@ -24,7 +24,7 @@ const ProductList = ({ products, title }) => {
           <Link key={product.id} to={`/san-pham/${product.id}`} className="product">
             <div className="product-image">
               <img src={product.image} alt={product.name} />
-              {product.discount && <span className="product-tag">{product.discount}</span>}
+              {product.discount && <span className="product-tag" style={{position: 'absolute', left: '8px', fontSize: '12px'}}>{product.discount}</span>}
             </div>
             <div className="product-info1">
               <h3>{product.name}</h3>
