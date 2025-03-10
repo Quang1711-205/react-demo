@@ -30,6 +30,7 @@
   }
   
   .hero h1 {
+    font-family: Helvetica Neue,Helvetica,Arial,文泉驛正黑,WenQuanYi Zen Hei,Hiragino Sans GB,儷黑 Pro,LiHei Pro,Heiti TC,微軟正黑體,Microsoft JhengHei UI,Microsoft JhengHei,sans-serif;
     font-size: 2.8rem;
     font-weight: 700;
     margin-bottom: 1rem;
@@ -38,6 +39,7 @@
   }
   
   .hero p {
+    font-family: Helvetica Neue,Helvetica,Arial,文泉驛正黑,WenQuanYi Zen Hei,Hiragino Sans GB,儷黑 Pro,LiHei Pro,Heiti TC,微軟正黑體,Microsoft JhengHei UI,Microsoft JhengHei,sans-serif;
     font-size: 1.1rem;
     color: rgba(255, 255, 255, 0.9);
     margin-bottom: 1.5rem;
@@ -286,7 +288,7 @@
               position: absolute;
               left: 0;
               right: 0;
-              margin-top: -4px;
+              margin-top: -21px;
               display: flex;
           }
           
@@ -305,10 +307,11 @@
           }
           
           .product-price1 {
-              margin-top: 20px;
+              margin-top: 15px;
               color: #ff4040;
-              font-weight: bold;
-              font-size: 20px;
+              font-weight: 500;
+              font-size: 1.125rem;
+              font-family: Helvetica Neue,Helvetica,Arial,文泉驛正黑,WenQuanYi Zen Hei,Hiragino Sans GB,儷黑 Pro,LiHei Pro,Heiti TC,微軟正黑體,Microsoft JhengHei UI,Microsoft JhengHei,sans-serif;
               text-align: center;
           }
           
@@ -766,6 +769,8 @@
 .category-name {
   text-align: center;
   font-size: 14px;
+  font-family: Helvetica Neue,Helvetica,Arial,文泉驛正黑,WenQuanYi Zen Hei,Hiragino Sans GB,儷黑 Pro,LiHei Pro,Heiti TC,微軟正黑體,Microsoft JhengHei UI,Microsoft JhengHei,sans-serif;
+  font-weight: 500;
 }
 
 /* Media query cho thiết bị di động */
@@ -929,6 +934,9 @@
   .view-all {
     align-self: flex-end;
     margin-top: -25px;
+    font-family: Helvetica Neue,Helvetica,Arial,文泉驛正黑,WenQuanYi Zen Hei,Hiragino Sans GB,儷黑 Pro,LiHei Pro,Heiti TC,微軟正黑體,Microsoft JhengHei UI,Microsoft JhengHei,sans-serif;
+    font-weight: 500;
+    font-size: 12px;
   }
 
   .products-container {
@@ -983,8 +991,11 @@
   }
 
   .product-price1 {
-    font-size: 16px;
+    font-family: Helvetica Neue,Helvetica,Arial,文泉驛正黑,WenQuanYi Zen Hei,Hiragino Sans GB,儷黑 Pro,LiHei Pro,Heiti TC,微軟正黑體,Microsoft JhengHei UI,Microsoft JhengHei,sans-serif;
+    font-size: 1.125rem;
+    font-weight: 500;
     margin-top: 8px;
+
   }
 
   .status-bar {
@@ -997,19 +1008,16 @@
     display: none;
   }
 
-  .section-title {
-    margin: 0;
-    font-size: 18px;
-    font-weight: 600;
+  .category-name {
+    font-size: 12px;
+    font-family: -apple-system,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Roboto,Droid Sans,Arial,sans-serif;
+    font-weight: 500;
   }
 
-  .categories {
-    margin-bottom: 0;
-    padding-top: 5px;
-  }
-
-  section.fade-in {
-    margin-bottom: 20px;
+  .title-text {
+    font-family: Helvetica Neue,Helvetica,Arial,文泉驛正黑,WenQuanYi Zen Hei,Hiragino Sans GB,儷黑 Pro,LiHei Pro,Heiti TC,微軟正黑體,Microsoft JhengHei UI,Microsoft JhengHei,sans-serif;
+    font-size: 16px;
+    font-weight: 700;
   }
 }
 
