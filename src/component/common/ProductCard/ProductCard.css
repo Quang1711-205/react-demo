@@ -6,12 +6,14 @@
 
   .section-title {
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
     font-weight: bold;
   }
 
   .section-titles {
     margin-bottom: 15px;
+    font-weight: 600;
     position: relative;
     font-size: 20px;
     color: var(--dark-gray);
@@ -90,7 +92,8 @@
   }
   
   .product-info h3 {
-    font-size: 18px;
+    font-size: 15px;
+    font-weight: 600;
     margin-bottom: 10px;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -98,8 +101,8 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    height: 52px;
-    line-height: 1.5;
+    height: 48px;
+    line-height: 1.6;
     margin-top: 0;
   }
   
@@ -111,14 +114,14 @@
   }
   
   .price {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     color: var(--primary);
   }
   
   .rating {
     color: #ffb800;
-    font-size: 14px;
+    font-size: 13px;
   }
   
   .product-actions {
@@ -248,3 +251,43 @@
     }
   }
   
+  /* Move these rules to the end of your stylesheet */
+@media screen and (max-width: 768px) {
+  .section-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .categories {
+    margin-bottom: 0;
+    padding-top: 5px;
+  }
+
+  section.fade-in {
+    margin-bottom: 5px;
+    padding-bottom: 0;
+  }
+
+  .container1 {
+    margin-bottom: 10px;
+  }
+
+  .products {
+    padding-top: 25px;
+  }
+
+  .product-info1 h3 {
+    font-size: 12px;
+    line-height: 1.4;
+    height: 33px;
+  }
+
+  .price {
+    font-size: 15px;
+  }
+
+  .rating {
+    font-size: 11px;
+  }
+}

@@ -152,6 +152,7 @@
       padding: 2rem 1.5rem;
       height: auto;
       padding: 40px 0;
+      margin-bottom: 10px;
     }
 
     .hero h1 {
@@ -476,7 +477,8 @@
       }
   
       .product-info1 h3 {
-        font-size: 17px;
+        font-size: 15px;
+        font-weight: 600;
         margin-bottom: 10px;
         display: -webkit-box;
         -webkit-line-clamp: 2; /* Giới hạn 2 dòng */
@@ -485,8 +487,8 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: normal;
-        height: 52px; /* Chiều cao tương đương với 2 dòng */
-        line-height: 1.5; /* Điều chỉnh khoảng cách dòng phù hợp */
+        height: 48px; /* Chiều cao tương đương với 2 dòng */
+        line-height: 1.6; /* Điều chỉnh khoảng cách dòng phù hợp */
       }
   
       .product-prices {
@@ -497,7 +499,7 @@
       }
   
       .price {
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 700;
         color: var(--primary);
       }
@@ -510,7 +512,7 @@
   
       .rating {
         color: #ffb800;
-        font-size: 14px;
+        font-size: 13px;
       }
   
       .product-actions {
@@ -993,6 +995,21 @@
   .next-button {
     display: none;
   }
+
+  .section-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .categories {
+    margin-bottom: 0;
+    padding-top: 5px;
+  }
+
+  section.fade-in {
+    margin-bottom: 20px;
+  }
 }
 
 /* Additional Mobile Optimization */
@@ -1086,5 +1103,24 @@ a {
   section.fade-in {
     margin-bottom: 25px;
     padding-bottom: 10px;
+  }
+}
+
+
+/* Move these rules to the end of your stylesheet */
+@media screen and (max-width: 768px) {
+  .section-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .categories {
+    margin-bottom: 0;
+    padding-top: 5px;
+  }
+
+  section.fade-in {
+    margin-bottom: 20px;
   }
 }

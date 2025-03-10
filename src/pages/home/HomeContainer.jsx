@@ -117,7 +117,7 @@ function HomeContainer() {
 
       {/* Categories Section */}
       <section className="fade-in">
-        <h2 className="section-title" style={{marginBottom: '30px'}}>Danh mục nổi bật</h2>
+        <h2 className="section-title">Danh mục nổi bật</h2>
         <div className="categories">
           {categories.map((category, index) => (
             <Link
@@ -172,7 +172,7 @@ function HomeContainer() {
       </div>
 
       {/* Sản phẩm nổi bật */}
-      <h2 className="section-title" style={{marginBottom: '30px'}}>Sản phẩm nổi bật</h2>
+      <h2 className="section-title">Sản phẩm nổi bật</h2>
       <section className="products">
         {featuredProducts.map((product) => (
           <Link key={product.id} to={`/san-pham/${product.id}`} className="product">
