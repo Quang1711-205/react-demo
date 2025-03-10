@@ -948,7 +948,7 @@
 
         .spec-item {
             display: flex;
-            border-bottom: 1px dashed #eee;
+            border-bottom: 1px solid #eee;
             padding-bottom: 10px;
         }
 
@@ -961,6 +961,8 @@
 
         .spec-value {
             color: #555;
+            font-weight: 400;
+            font-family: -apple-system,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Roboto,Droid Sans,Arial,sans-serif;
         }
 
         .tab-content ul {
