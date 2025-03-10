@@ -953,7 +953,8 @@
         }
 
         .spec-label {
-            font-weight: 600;
+            font-family: -apple-system,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Roboto,Droid Sans,Arial,sans-serif;
+            font-weight: 400;
             width: 150px;
             flex-shrink: 0;
         }
