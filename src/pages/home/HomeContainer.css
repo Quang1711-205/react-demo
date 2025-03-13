@@ -491,7 +491,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: normal;
-        height: 42px; /* Chiều cao tương đương với 2 dòng */
+        height: 41px; /* Chiều cao tương đương với 2 dòng */
         line-height: 1.35; /* Điều chỉnh khoảng cách dòng phù hợp */
       }
   

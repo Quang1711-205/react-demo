@@ -278,7 +278,7 @@ header {
     overflow-y: auto;
     transition: left 0.3s ease;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
-    padding-top: 70px;
+    /*padding-top: 70px;*/
   }
 
   .mobile-nav.active {
