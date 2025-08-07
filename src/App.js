@@ -5,20 +5,25 @@ import Header from "./component/layout/Header/Header";
 import Footer from './component/layout/Footer/Footer';
 import Home from './pages/home/Home';
 import ProductDetails from './pages/ProductDetails/ProductDetai';
+import ShoppingCart from './pages/cart/ShoppingCart';
 import ScrollToTop from './ScrollToTop';
+import CartProvider from './contexts/CartContext';
 
 function App() {
   return (
     <HashRouter>
       <ScrollToTop />
       <PromoBar />
-      <Header />
-        {/* Điều hướng trang */}
-        <Routes>
-          <Route path="/" element={<Home />} /> 
-          <Route path="/san-pham/:id" element={<ProductDetails />} /> 
-        </Routes>
-      <Footer />
+      <CartProvider>
+        <Header />
+          {/* Điều hướng trang */}
+          <Routes>
+            <Route path="/" element={<Home />} /> 
+            <Route path="/san-pham/:id" element={<ProductDetails />} /> 
+            <Route path="/cart" element={<ShoppingCart />} />
+          </Routes>
+        <Footer />
+      </CartProvider>
     </HashRouter>
   );
 }

@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { useCart } from '../../../contexts/CartContext';
 import './Header.css';
 
 const Header = () => {
   const [isMobileNavActive, setIsMobileNavActive] = useState(false);
   const [isMobileSearchActive, setIsMobileSearchActive] = useState(false);
+  
+  // Get cart functionality from context
+  const { getCartCount } = useCart();
   
   // Xử lý overflow body khi mobile nav active
   useEffect(() => {
@@ -92,7 +96,9 @@ const Header = () => {
               <Link to="/cart" className="header-action-btn cart-icon">
                 <span className="action-icon">🛒</span>
                 <span className="action-label">Giỏ hàng</span>
-                <span className="cart-count">3</span>
+                {getCartCount() > 0 && (
+                  <span className="cart-count">{getCartCount()}</span>
+                )}
               </Link>
             </div>
           </div>
@@ -137,6 +143,9 @@ const Header = () => {
           <Link to="/cart">
             <span className="action-icon">🛒</span>
             <span>Giỏ hàng</span>
+            {getCartCount() > 0 && (
+              <span className="cart-count">{getCartCount()}</span>
+            )}
           </Link>
         </div>
         
